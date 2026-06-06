@@ -1,8 +1,9 @@
 import { createUserWithEmailAndPassword } from 'firebase/auth'
 import react, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import {auth} from '../firebase'
+import {auth, db} from '../firebase'
 import { toast, Toaster } from 'react-hot-toast';
+import { doc, setDoc } from 'firebase/firestore';
 
 
 function Signup() {
@@ -26,6 +27,22 @@ function Signup() {
       
       navigate('/main')
       toast.success('signup Successful')
+         if(userCredential.user){
+const newUser={
+  name,
+  email,
+  userId:userCredential.user.uid,
+  createdOn:auth.currentUser.metadata.creationTime
+}
+// firebase.firestore().collection('users').set
+const docRef= doc(db,'Names',auth.currentUser.uid)
+await setDoc(docRef,newUser)
+      toast.success('signup Succesful')
+      // console.log(userCredential);
+      
+      navigate('/')
+
+    }
      
  
      }
