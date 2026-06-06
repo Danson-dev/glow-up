@@ -11,7 +11,7 @@ import Contact from './components/Contact'
 const App = () => {
   return (
     
-        <Router basename="/glow-up">
+        <Router>
       <Navbar />
       <Routes>
         <Route path='/' element={<Signin />} />
