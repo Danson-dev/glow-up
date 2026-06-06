@@ -69,7 +69,8 @@ const Header = ({children}) => {
             {detailsOpen && (
               <div style={{ marginTop: '15px' }}>
                 <p style={{ color: 'black', textDecoration: 'none', fontSize: '1.3rem', margin: '15px 0', lineHeight: '1.6' }}>
-                  Contact us :<a href="tel:0706209021" style={{ color: 'rgb(218, 28, 176)', textDecoration: 'none', fontWeight: 'bold' }}>0706209021 or 0111599659</a>
+                  Contact us :<a href="tel:0706209021" style={{ color: 'rgb(218, 28, 176)', textDecoration: 'none', fontWeight: 'bold' }}>0706209021 or 0795493283</a>
+                  Contact us :<a href="tel:0795493283" style={{ color: 'rgb(218, 28, 176)', textDecoration: 'none', fontWeight: 'bold' }}>0706209021 or 0795493283</a>
                 </p>
                 <p style={{ color: 'black', textDecoration: 'none', fontSize: '1.3rem', margin: '15px 0', lineHeight: '1.6' }}>
                   We carpet cleaning services in all areas of the Makongeni.
